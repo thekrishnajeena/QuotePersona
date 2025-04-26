@@ -32,3 +32,7 @@ def get_quote():
         return jsonify({"quote": quote})
     else:
         return jsonify({"error": "Failed to fetch quote"}), 500
+
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=10000)
