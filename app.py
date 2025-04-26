@@ -7,7 +7,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = "AIzaSyCStBMjtNJ_2_FUIgWz5YS9Oct0_DSoVMw" #os.getenv("GEMINI_API_KEY")
 GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
 
 @app.route("/quote", methods=["GET"])
