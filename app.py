@@ -7,7 +7,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-GEMINI_API_KEY = "AIzaSyCStBMjtNJ_2_FUIgWz5YS9Oct0_DSoVMw" #os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 
 @app.route("/quote", methods=["GET"])
@@ -17,7 +17,7 @@ def get_quote():
     }
     payload = {
         "contents": [{
-            "parts": [{"text": "Give me a deep, peaceful, meaningful quote of the day"}]
+            "parts": [{"text": "Give me a deep, peaceful, meaningful quote of the day, not exceeding two or three lines of mobile width, just return quote"}]
         }]
     }
 
