@@ -17,7 +17,7 @@ def get_quote():
     }
     payload = {
         "contents": [{
-            "parts": [{"text": "Give me a deep, reality check, meaningful quote of the day, not exceeding three lines of mobile width, return different quote each time, just return quote"}]
+            "parts": [{"text": "Give me a deep, reality check, meaningful quote for today, not exceeding three lines of mobile width, just return quote"}]
         }]
     }
 
