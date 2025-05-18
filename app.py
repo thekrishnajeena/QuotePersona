@@ -17,7 +17,7 @@ def get_quote():
     }
     payload = {
         "contents": [{
-            "parts": [{"text": "Give me a unique and thought-provoking quote for today — something inspiring, not too mainstream, preferably from literature, philosophy, or great thinkers. Avoid repeating old common ones and don't exceed three lines of mobile width."}]
+            "parts": [{"text": "Give me a unique and thought-provoking quote for today something inspiring, not too mainstream, preferably from literature, philosophy, or great thinkers. Avoid repeating old common ones and don't exceed three lines of mobile width."}]
         }]
     }
 
